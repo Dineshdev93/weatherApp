@@ -38,7 +38,7 @@ function App() {
       },[city])
    
   return (
-     <div className="bg-slate-900 h-screen flex justify-center align-top">
+     <div className="bg-gray-900 h-screen flex justify-center align-top">
       
          <div className=" w-1/4 h-96 mt-28">
           

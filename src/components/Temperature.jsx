@@ -31,20 +31,20 @@ export default function Temperature({ item, setCity }) {
         :
         <span><FiSun className="text-yellow-400 text-8xl "/></span>
       } */}
-      <span className="text-white"><img className="w-24" src={item.current.condition.icon} alt="logo"/></span>
+      <span className="text-white  text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out"><img className="w-24" src={item.current.condition.icon} alt="logo"/></span>
 
       </div>
 
       <div className="flex justify-center mt-3 text-white">
-        <p className="text-3xl">{item.current.temp_c}</p>
+        <p className="text-3xl">{item.current.temp_c}C</p>
         <sub>.</sub>
       </div>
       <div className="flex justify-center mt-6 text-white">
         <span className="text-xl">{item.current.condition.text}</span>
       </div>
       <div className="flex justify-center mt-8 text-white">
-        <span className="text-slate-500">
-          Today : {item.location.localtime} | {item.location.name}|({item.location.country})
+        <span className="text-slate-500 ">
+          Today / {item.location.localtime} / {item.location.name},{item.location.region},({item.location.country})
         </span>
       </div>
     </div>
