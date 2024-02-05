@@ -56,7 +56,7 @@ function App() {
              <Highlights data={item} key={index}/>
                
             ))
-            : <span className="text-red-500 text-4xl">No data found</span>
+            : <span className="text-white text-4xl">Loadinng...</span>
           }
          </div>
          

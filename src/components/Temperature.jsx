@@ -21,15 +21,23 @@ export default function Temperature({ item, setCity }) {
           <SlLocationPin className="text-2xl text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out" />
         </span>
       </div>
-      <div className="flex justify-center mt-6">
+      <div className="flex justify-center mt-3s">
+        {/* {
+           item.current.is_day === 0 ?
+       
         <span>
-          <IoMoonOutline className="text-3xl text-white text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out" />
+          <IoMoonOutline className="text-8xl text-white text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out" />
         </span>
-        {/* <span><FiSun className="text-yellow-400 text-3xl"/></span> */}
+        :
+        <span><FiSun className="text-yellow-400 text-8xl "/></span>
+      } */}
+      <span className="text-white"><img className="w-24" src={item.current.condition.icon} alt="logo"/></span>
+
       </div>
-      <div className="flex justify-center mt-8 text-white">
+
+      <div className="flex justify-center mt-3 text-white">
         <p className="text-3xl">{item.current.temp_c}</p>
-        <sub>.</sub>C
+        <sub>.</sub>
       </div>
       <div className="flex justify-center mt-6 text-white">
         <span className="text-xl">{item.current.condition.text}</span>
