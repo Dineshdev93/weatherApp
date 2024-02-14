@@ -1,6 +1,4 @@
 import React from "react";
-import { IoMoonOutline } from "react-icons/io5";
-import { FiSun } from "react-icons/fi";
 import { SlLocationPin } from "react-icons/sl";
 
 export default function Temperature({ item, setCity }) {
@@ -22,15 +20,7 @@ export default function Temperature({ item, setCity }) {
         </span>
       </div>
       <div className="flex justify-center mt-3s">
-        {/* {
-           item.current.is_day === 0 ?
        
-        <span>
-          <IoMoonOutline className="text-8xl text-white text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out" />
-        </span>
-        :
-        <span><FiSun className="text-yellow-400 text-8xl "/></span>
-      } */}
       <span className="text-white  text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out"><img className="w-24" src={item.current.condition.icon} alt="logo"/></span>
 
       </div>
