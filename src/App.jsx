@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import Highlights from "./components/Highlights";
 import Temperature from "./components/Temperature";
-
 import axios from "axios";
-import Timer from "./components/Timer";
 function App() {
   const [weatherdata, setWeatherData] = useState([]);
   const [city, setCity] = useState("Jaipur");
