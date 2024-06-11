@@ -35,14 +35,14 @@ function App() {
   }, [city]);
 
   return (
-    <div className="bg-gray-900 h-screen flex justify-center align-top gap-20">
-      <div className=" w-1/4 h-96 mt-28">
+    <div className="bg-gray-900 h-screen  flex justify-center align-top gap-20">
+      <div className=" w-1/4  mt-28">
         {weatherdata &&
           weatherdata.map((item, index) => (
             <Temperature item={item} key={index} setCity={setCity} />
           ))}
       </div>
-      <div className=" w-1/3  h-96 mt-36 ml-3">
+      <div className=" w-1/3   mt-36 ml-3">
         {weatherdata.length > 0 ? (
           weatherdata.map((item, index) => (
             <Highlights data={item} key={index} />
